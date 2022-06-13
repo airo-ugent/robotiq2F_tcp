@@ -49,7 +49,7 @@ class Robotiq2F85TCP:
                 s.sendall(("" + str.strip(command) + "\n").encode())
                 # s.sendall(b'SET POS 100 \n')
 
-                data = s.recv(2 ** 10)
+                data = s.recv(2**10)
                 return data.decode()[:-1]
             except Exception as e:
                 raise (e)
