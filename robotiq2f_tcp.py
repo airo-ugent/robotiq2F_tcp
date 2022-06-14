@@ -1,7 +1,7 @@
 # Library importation
+import asyncio
 import socket
 import time
-import asyncio
 
 
 class Robotiq2F85TCP:
@@ -87,7 +87,7 @@ class Robotiq2F85TCP:
         self.target_position = position
         while self.is_gripper_moving():
             time.sleep(0.05)
-            
+
     async def amove_to_position(self, position: int, speed: int = None, grasp_force: int = None):
         """Asynchronously move the robot to the desired position with the specified speed and grasp force.
 
