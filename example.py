@@ -1,6 +1,6 @@
 import time
 
-from robotiq2f_tcp import Robotiq2F85TCP
+from robotiq2f import Robotiq2F85TCP
 
 robotiq = Robotiq2F85TCP("10.42.0.162")
 
