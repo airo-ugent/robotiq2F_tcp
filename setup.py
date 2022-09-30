@@ -6,6 +6,6 @@ setup(
     url="https://github.com/airo-ugent/robotiq2F/.git",
     author="Thomas Lips",
     author_email="thomas.lips@ugent.be",
-    description="Drivers for controlling a robotiq2F gripper over a number of physical interfaces",
+    description="Driver for controlling a robotiq2F gripper using the Robotiq URCap TCP interface",
     packages=find_packages(),
 )

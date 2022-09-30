@@ -1,10 +1,6 @@
 # robotiq2F_tcp
-Python package to control Robotiq2F grippers over a number of physical interfaces:
-
-- by connecting the RS-485 on a UR robot and wrapping the TCP API defined by the robotiq URCap
-- by connecting the RS-485 to a usb connector over modbus RTU (TODO)
+Python package with driver for Robotiq2F grippers that wraps the TCP API of the Robotiq URCap. For use when connecting the RS-485 on a UR robot (so no RS-485 to usb convertor and serial device)
 
 
-
-To use this controller, install the python package using `pip install git+https:`.
+To use this packages, install the python package using `pip install git+https:`.
 To extend, clone this repo and run pip install -e .
