@@ -1,7 +1,7 @@
 # see https://pre-commit.com/hooks.html
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0
+    rev: v4.4.0
     hooks:
     -   id: check-yaml
     #-   id: check-json
@@ -9,22 +9,22 @@ repos:
     -   id: trailing-whitespace
     -   id: mixed-line-ending
     -   id: check-added-large-files
--   repo: https://github.com/myint/autoflake
-    rev: v1.4
+-   repo: https://github.com/PyCQA/autoflake
+    rev: v2.0.2
     hooks:
     -   id: autoflake
         name: autoflake - remove unused imports and variables
         entry: autoflake --remove-all-unused-imports --recursive --remove-unused-variables --in-place --ignore-init-module-imports
         files: \.py$
 -   repo: https://github.com/PyCQA/isort
-    rev: 5.10.1
+    rev: 5.12.0
     hooks:
     -   id: isort
         name: isort - sort imports
         entry: isort --profile black --line-length 119
         files: \.py$
 -   repo: https://github.com/psf/black
-    rev: 22.3.0
+    rev: 23.1.0
     hooks:
     -   id: black
         name: black - python code formatter
